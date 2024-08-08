@@ -1,3 +1,28 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
 @font-face {
   font-family: "linea-basic-10";
   src: url("fonts/linea-basic-10.eot");
@@ -1838,6 +1863,7 @@ body {
       rgba(41, 50, 65, 0.8)
     ),
     url(../img/nat-4.jpg);
+
   background-size: cover;
   -webkit-transform: skewY(-7deg);
   transform: skewY(-7deg);
