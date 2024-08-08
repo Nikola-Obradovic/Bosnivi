@@ -11,8 +11,6 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
-gsap.ticker.lagSmoothing(0);
-
 const navButton = document.querySelector(".navigation__button");
 console.log(navButton);
 
